@@ -6,7 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de imagem do fundo</title>
 </head>
+<style>
+    div.geral{
+        margin: auto;
+        background-color: #444;
+        width: 950px;
+
+    }
+    .quadrado{
+        border: 2px solid black;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 5px;
+        width: 300px;
+        height: 300px;
+    }
+    #q1{
+        background-color: #357;
+    }
+    #q2{
+        background-image: linear-gradient(to bottom, red, yellow);
+    }
+    #q3{
+        background-image: url('imagens/pattern001.png');
+    }
+</style>
 <body>
-    div.quadrado *3
+    <div class="geral">
+        <div class="quadrado" id="q1">
+        </div>
+        <div class="quadrado" id="q2">
+        </div>
+        <div class="quadrado" id="q3">
+        </div>
+    </div>
 </body>
 </html>
