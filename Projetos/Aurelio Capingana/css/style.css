@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Space+Mono:ital,wght@1,700&display=swap');
 
 :root{
-    --cor1:#919191;
-    --cor2:#90CBFB;
+    --cor1:rgba(128, 128, 128, 0.795);
+    --cor2:#1D7199;
     --cor3:#110066;
 
     --font-top:'Space Mono', monospace;
@@ -16,9 +16,6 @@
 *{
     margin: 0;
     padding: 0;  
-}
-body{
-    background-color: var(--cor2);
 }
 header{
     border-bottom: 1px solid #555;
