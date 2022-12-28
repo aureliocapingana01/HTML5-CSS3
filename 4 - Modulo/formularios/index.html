@@ -58,6 +58,39 @@
                 <label> <input type="checkbox" name="espor" id="gespor"> Atletismo </label>
         </fieldset>
 
+        <p>
+            <label for="gestado">
+                <select name="estado" id="gestado">
+
+                    <optgroup label="Região Sul">
+                        <option value="RS" selected>Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Paraná</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label for="gprof">Profissão: </label>
+            <input type="text" name="prof" id="gprof" list="lsprof">
+            
+            <datalist id="lsprof">
+                <option value="Prof">Professor</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Cont">Contablista</option>
+                <option value="Eng">Engenheiro</option>
+                <option value="Adm">Administrador</option>
+            </datalist>
+        </p>
+
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </form>
