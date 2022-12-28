@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formualrio de Soma</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+
+    <p>
+        <label for="gn1">Numero 1:</label>
+        <input type="number" name="n1" id="gn1" required
+        oninput="gsoma.innerHTML = Number(gn1.value) + Number(gn2.value)">
+    </p> 
+    <p>
+        <label for="gn2">Numero 2:</label>
+        <input type="number" name="n2" id="gn2" required
+        oninput="gsoma.innerHTML = Number(gn1.value) + Number(gn2.value)">
+    </p>
+    <p>
+        <label for="gsoma">Soma:</label>
+        <output name="soma" id="gsoma">0</output>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
