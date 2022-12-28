@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 580px;
+    border-collapse: collapse;
+    margin: auto;
+    position: relative;
+}
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color:  rgb(54, 54, 54);
+}
+caption{
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 10px;
+    background-color: rgb(122, 122, 122);
+}
+tbody > tr:nth-child(2n){
+    background-color: rgb(122, 122, 122);
+}
+td,th{
+    border: 1px solid #555;
+    padding: 10px;
+}
+td.num,
+td.sigla,
+td.br{
+  text-align: right;  
+}
+td.sigla,
+td.br{
+    font-weight: bolder;
+}
+thead, tfoot{
+    background-color: rgb(54, 54, 54);
+    color: white;
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+caption {
+    padding: 10px;
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    border: 1px solid #555;
+    width: 600px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+tr,
+td {
+    border: 1px solid #555;
+    padding: 10px;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: rgb(206, 206, 206);
+}
+
+th {
+    padding: 10px;
+    background-color: rgb(129, 129, 129);
+}
+
+table tfoot {
+    padding: 10px;
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    text-align: center;
+}

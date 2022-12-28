@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.tabela{
+    width: 550px;
+}
+/* tbody th,td{
+    border-bottom: 1px solid #344;
+} */
+tbody tr:nth-child(even){
+    background-color: #eee;
+}
+th, td{
+    padding: 5px;
+}
+table thead,
+table tfoot{
+    background-color: #344;
+}
+table tbody tr:hover{
+    background-color: #566;
+}
+table tfoot{
+    text-align: center;
+}

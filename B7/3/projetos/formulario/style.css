@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+label{
+    display: block;
+    margin-bottom: 15px;
+}
+input[type=text], textarea{
+    padding: 5px;
+    outline: 0;
+}
+textarea{
+    resize: none;
+}

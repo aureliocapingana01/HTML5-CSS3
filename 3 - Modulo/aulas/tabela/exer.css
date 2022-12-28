@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+table.exer{
+    /* border: 1px solid #555; */
+    border-collapse: collapse;
+    text-align: center;
+    width: 300px;
+}
+table.exer td{
+    border: 1px solid #555;
+    padding: 10px;
+}
