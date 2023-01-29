@@ -184,5 +184,6 @@ footer a:hover{
     font-weight: bolder;
     background-color: var(--cor5);
     color: var(--cor2);
-    padding: 1.5px 4.5px;text-transform: uppercase;
+    padding: 1.5px 4.5px;
+    text-transform: uppercase;
 }
