@@ -1,0 +1,35 @@
+
+:root {
+    --cor1: #F2F2E4;
+    --cor2: #52730A;
+    --cor3: #274001;
+    --cor4: #38576D;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(97, 80, 80);
+    padding: 20px;
+}
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+header .menu {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .menu-line {
+    height: 3px;
+    background-color: #333;
+}
