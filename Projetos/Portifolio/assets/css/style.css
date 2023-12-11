@@ -1,4 +1,5 @@
 
+
 :root {
     --cor1: #F2F2E4;
     --cor2: #52730A;
@@ -15,12 +16,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(97, 80, 80);
+    /* background-color: #ccc; */
     padding: 20px;
+    /* Para tornar o header fixo sem rolagem  */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 header .logo {
     font-size: 25px;
     font-weight: bold;
+    color: #fff;
 }
 header .menu {
     width: 25px;
@@ -32,4 +39,103 @@ header .menu {
 header .menu-line {
     height: 3px;
     background-color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.container .leftside {
+    flex: 1;
+    background-color: #3b576d;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.container .info {
+    color: #fff;
+}
+.container .info .profession {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.container .info .name {
+    font-weight: bold;
+    font-size: 80px;
+    margin: 20px 0px;
+
+}
+.container .info .buttons a {
+    display: inline-block;
+    background-color: #fff;
+    color: #3b576d;
+    padding: 18px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #111;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.container .info .buttons a.light {
+  color: #fff;  
+  background-color: #3b576d;
+}
+.container .info .buttons a:hover {
+    opacity: 0.7;
+}
+.container .rightside {
+    flex: 1;
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Responsividade do site  */
+
+@media (max-width: 850px) {
+    header {
+        position: initial;
+        background-color: #3b576d;
+    }
+    header .menu-line {
+        background-color: #fff;
+    }
+    .container {
+        flex-direction: column;
+        height: calc(100vh - 66px);
+    }
+    .container .leftside {
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    footer {
+        position: initial;
+        color: #333;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container .leftside .info .name {
+        font-size: 50px;
+    } 
+    .container .leftside .info .buttons 
+     a{
+        display: block;
+        margin: 0px 0px 20px 0px;
+    }   
 }
